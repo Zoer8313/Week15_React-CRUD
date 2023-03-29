@@ -1,23 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import { JobsList } from './Components/JobsList';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className = "header">
+        <h1><u>JOBS! JOBS! JOBS!</u></h1>
+        <h2>Looking for work? Look no further! Here at Generic Joblist™, you are just one click away from being gainfully employed! Enter
+          your name and phone number, and a member from one of our various call centers will be with you in a jiffy. Happy hunting! </h2>
+          </div>
+        <JobsList />
     </div>
   );
 }
