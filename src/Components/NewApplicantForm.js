@@ -27,7 +27,7 @@ export const NewApplicantForm = (props) => {
             <h4>Apply to This Position</h4>
             <form onSubmit = {onSubmit} >
                 <input
-                type = "text"
+                type = "text"//when the text in this input changes, we call setName() and set "name" to the target value.
                 placeholder = "Name"
                 onChange = {(e) => setName(e.target.value)}
                 value = {name} />{" "}
@@ -38,6 +38,6 @@ export const NewApplicantForm = (props) => {
                 value = {phoneNumber} />
                 <button type = "submit">Apply</button>
             </form>
-        </div>
+        </div>//"value" section is the last part of tying const's up top to the state variable
     )
 }
