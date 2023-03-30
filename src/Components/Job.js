@@ -2,8 +2,11 @@ import React from "react";
 import { NewApplicantForm } from "./NewApplicantForm";//why are these put into curly braces?
 
 export const Job = (props) => {
-    const { job, updateJob } = props;//are these {} and not [] cuz props?
-console.log(job);
+
+    const { job, updateJob } = props;
+
+    console.log(job);
+    
     const deleteApplicant = (applicantId) => {
         //console.log(applicantId); undefined
         const updatedJob = {//assigning a new variable to an object
